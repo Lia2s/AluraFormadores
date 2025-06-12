@@ -1,0 +1,41 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #ffd6f3, #ffe3f7);
+  color: #b30059;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff69b4;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.galeria img {
+  max-width: 300px;
+  border: 4px solid #ffb6c1;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ff69b4;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #cc0066;
+}

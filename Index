@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbie Princesas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 Barbie Princesas 🌸</h1>
+    <p>Um mundo mágico cheio de aventuras reais</p>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <img src="imagens/barbie-princesa.jpg" alt="Barbie Princesa">
+      <p>Conheça o reino encantado onde Barbie vive aventuras como princesa corajosa!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>👑 Criado com carinho por fãs da Barbie | © 2025</p>
+  </footer>
+</body>
+</html>
