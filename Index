@@ -1,26 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barbie Princesas</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies - MCU Fan Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #cc0000; /* Marvel red */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .movie-list {
+            list-style: none;
+            padding: 0;
+        }
+        .movie-list li {
+            background: #e9e9e9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #cc0000;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>🌸 Barbie Princesas 🌸</h1>
-    <p>Um mundo mágico cheio de aventuras reais</p>
-  </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Marvel Cinematic Universe Fan Page!</h1>
+        </header>
 
-  <main>
-    <section class="galeria">
-      <img src="imagens/barbie-princesa.jpg" alt="Barbie Princesa">
-      <p>Conheça o reino encantado onde Barbie vive aventuras como princesa corajosa!</p>
-    </section>
-  </main>
+        <section>
+            <p>
+                Explore the incredible world of Marvel movies, from the origin stories of our favorite heroes to epic
+                crossovers that unite them against universal threats. The Marvel Cinematic Universe (MCU) has captivated
+                audiences worldwide with its interconnected storylines, rich characters, and stunning visuals.
+            </p>
+            <p>
+                Here are a few popular movies from the MCU:
+            </p>
 
-  <footer>
-    <p>👑 Criado com carinho por fãs da Barbie | © 2025</p>
-  </footer>
+            <ul class="movie-list">
+                <li><strong>Iron Man (2008)</strong> - The film that started it all, introducing Tony Stark and establishing the MCU.</li>
+                <li><strong>The Avengers (2012)</strong> - The first major crossover, bringing together Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye.</li>
+                <li><strong>Guardians of the Galaxy (2014)</strong> - A space-faring adventure with a unique blend of humor and heart.</li>
+                <li><strong>Black Panther (2018)</strong> - A groundbreaking film that introduced the technologically advanced nation of Wakanda.</li>
+                <li><strong>Avengers: Endgame (2019)</strong> - The epic conclusion to the Infinity Saga, delivering emotional highs and monumental battles.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Marvel Fan Page. All rights reserved. Data and characters are property of Marvel Entertainment and The Walt Disney Company.</p>
+        </footer>
+    </div>
 </body>
 </html>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies - MCU Fan Page</title>
+    <link rel="stylesheet" href="style.css"> </head>

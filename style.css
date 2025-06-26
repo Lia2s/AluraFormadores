@@ -1,41 +1,127 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Body Styles */
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(to bottom right, #ffd6f3, #ffe3f7);
-  color: #b30059;
-  text-align: center;
-  padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1a1a1a, #333333); /* Dark gradient background */
+    color: #e0e0e0; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    padding-top: 40px; /* Add some space from the top */
+    box-sizing: border-box; /* Include padding in element's total width and height */
 }
 
+/* Container for the content */
+.container {
+    max-width: 900px;
+    width: 95%; /* Make it slightly responsive */
+    margin: 0 auto; /* Center the container */
+    background: #282828; /* Slightly lighter dark background for the container */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+    border: 1px solid #444; /* Subtle border */
+    animation: fadeIn 1s ease-out; /* Simple fade-in animation */
+}
+
+/* Header Styles */
 header {
-  margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #cc0000; /* Stronger Marvel red line */
+    margin-bottom: 30px;
 }
 
 h1 {
-  font-size: 3rem;
-  color: #ff69b4;
+    color: #cc0000; /* Marvel red */
+    font-size: 2.8em; /* Larger heading */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
 }
 
-p {
-  font-size: 1.2rem;
+/* Section Paragraphs */
+section p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #cccccc;
 }
 
-.galeria img {
-  max-width: 300px;
-  border: 4px solid #ffb6c1;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #ff69b4;
-  margin-top: 20px;
+/* Movie List Styles */
+.movie-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
 }
 
+.movie-list li {
+    background: #3a3a3a; /* Darker background for list items */
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-left: 6px solid #e62429; /* Brighter Marvel red accent */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between bullet and text */
+}
+
+.movie-list li:hover {
+    transform: translateX(5px); /* Slight slide effect on hover */
+    box-shadow: 0 4px 15px rgba(230, 36, 41, 0.3); /* Red glow on hover */
+}
+
+.movie-list li strong {
+    color: #ffffff; /* White for movie titles */
+    font-size: 1.15em;
+}
+
+/* Footer Styles */
 footer {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #cc0066;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #555; /* Dashed subtle border */
+    font-size: 0.85em;
+    color: #999999;
+}
+
+/* Keyframe Animation for Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    .container {
+        padding: 20px;
+    }
+    .movie-list li {
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .container {
+        padding: 15px;
+        width: 98%;
+    }
+    body {
+        padding: 20px 0; /* Less vertical padding on small screens */
+    }
 }
